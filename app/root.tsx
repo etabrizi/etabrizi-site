@@ -17,7 +17,7 @@ export const links: LinksFunction = () => [
 
 export const meta: MetaFunction = () => [
   { charset: "utf-8" },
-  { title: "ETabrizi - UI Engineer" },
+  { title: "ETabrizi / UI Engineer" },
   { name: "viewport", content: "width=device-width, initial-scale=1" },
   {
     name: "description",

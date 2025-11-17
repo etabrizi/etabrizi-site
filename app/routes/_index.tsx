@@ -92,7 +92,7 @@ export default function IndexRoute() {
           </p>
           <div className="button-row">
             <Link to="/work" prefetch="intent" className="button">
-              View projects →
+              View projects
             </Link>
             <Link to="/contact" prefetch="intent" className="button secondary">
               Get in touch
