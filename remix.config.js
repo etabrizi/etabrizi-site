@@ -1,6 +1,10 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 const config = {
   ignoredRouteFiles: ["**/.*"],
+  server: "./server.ts",
+  serverBuildTarget: "netlify",
+  serverBuildPath: "netlify/functions/server/index.js",
+  serverModuleFormat: "esm",
   future: {
     v3_fetcherPersist: true,
     v3_lazyRouteDiscovery: true,
