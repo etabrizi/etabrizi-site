@@ -10,7 +10,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "Livestock-Information-Design system",
+    id: "devhub",
     title: "DeveloperHub",
     subtitle: "A next-generation API portal for livestock data integration",
     summary:

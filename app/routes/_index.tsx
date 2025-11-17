@@ -16,7 +16,7 @@ type ProjectsResponse = {
 };
 
 export const meta: MetaFunction = () => [
-  { title: "Home | Etabrizi - UI Engineer" },
+  { title: "Home | ETabrizi - UI Engineer" },
   {
     name: "description",
     content: "Portfolio overview with selected work and ways to connect."
