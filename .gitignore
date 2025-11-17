@@ -4,6 +4,7 @@ node_modules
 
 # build output
 build
+public/build
 
 # env / misc
 .DS_Store
