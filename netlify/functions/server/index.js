@@ -122,8 +122,8 @@ import { jsx as jsx2, jsxs } from "react/jsx-runtime";
 var links = () => [
   { rel: "stylesheet", href: global_default }
 ], meta = () => [
-  { charset: "utf-8" },
-  { title: "ETabrizi - UI Engineer" },
+  { charSet: "utf-8" },
+  { title: "ETabrizi / UI Engineer" },
   { name: "viewport", content: "width=device-width, initial-scale=1" },
   {
     name: "description",
@@ -299,7 +299,7 @@ function IndexRoute() {
       /* @__PURE__ */ jsx4("h1", { children: "Hi, I'm Emyr Tabrizi." }),
       /* @__PURE__ */ jsx4("p", { children: "Specialising in creating intuitive, accessible, and inclusive digital experiences, I combine a deep understanding of accessibility standards with user-centred design principles and technical expertise to deliver impactful, high-quality solutions." }),
       /* @__PURE__ */ jsxs3("div", { className: "button-row", children: [
-        /* @__PURE__ */ jsx4(Link, { to: "/work", prefetch: "intent", className: "button", children: "View projects \u2192" }),
+        /* @__PURE__ */ jsx4(Link, { to: "/work", prefetch: "intent", className: "button", children: "View projects" }),
         /* @__PURE__ */ jsx4(Link, { to: "/contact", prefetch: "intent", className: "button secondary", children: "Get in touch" })
       ] })
     ] }) }),
@@ -515,7 +515,7 @@ function WorkRoute() {
               target: "_blank",
               rel: "noreferrer",
               style: { width: "fit-content" },
-              children: "View details \u2192"
+              children: "View details"
             }
           ) : null
         ] })
@@ -525,7 +525,7 @@ function WorkRoute() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-GJDVTIVN.js", imports: ["/build/_shared/chunk-E6XIF34M.js", "/build/_shared/chunk-4HXKWYDW.js", "/build/_shared/chunk-Q3IECNXJ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-MNQSTW5Z.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-KSGXC5VA.js", imports: ["/build/_shared/chunk-PGOH7JLP.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-ZGC6SHA4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.projects": { id: "routes/api.projects", parentId: "root", path: "api/projects", index: void 0, caseSensitive: void 0, module: "/build/routes/api.projects-OF3362T2.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-7G2OBKR6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/work": { id: "routes/work", parentId: "root", path: "work", index: void 0, caseSensitive: void 0, module: "/build/routes/work-SEUSLSJW.js", imports: ["/build/_shared/chunk-PGOH7JLP.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "f7a20f9f", hmr: void 0, url: "/build/manifest-F7A20F9F.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-GJDVTIVN.js", imports: ["/build/_shared/chunk-E6XIF34M.js", "/build/_shared/chunk-4HXKWYDW.js", "/build/_shared/chunk-Q3IECNXJ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-AN27GIAC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-VYLDADGV.js", imports: ["/build/_shared/chunk-PGOH7JLP.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-ZGC6SHA4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.projects": { id: "routes/api.projects", parentId: "root", path: "api/projects", index: void 0, caseSensitive: void 0, module: "/build/routes/api.projects-OF3362T2.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-7G2OBKR6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/work": { id: "routes/work", parentId: "root", path: "work", index: void 0, caseSensitive: void 0, module: "/build/routes/work-CI7G7OVX.js", imports: ["/build/_shared/chunk-PGOH7JLP.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "14f987b6", hmr: void 0, url: "/build/manifest-14F987B6.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "production", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !0, v3_relativeSplatPath: !0, v3_throwAbortReason: !0, v3_routeConfig: !1, v3_singleFetch: !0, v3_lazyRouteDiscovery: !0, unstable_optimizeDeps: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

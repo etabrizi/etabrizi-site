@@ -85,7 +85,7 @@ export default function WorkRoute() {
                       rel="noreferrer"
                       style={{ width: "fit-content" }}
                     >
-                      View details →
+                      View details
                     </Link>
                   ) : null}
                 </div>
