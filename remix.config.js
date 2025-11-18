@@ -2,7 +2,6 @@
 const config = {
   ignoredRouteFiles: ["**/.*"],
   server: "./server.ts",
-  serverBuildTarget: "netlify",
   serverBuildPath: "netlify/functions/server/index.js",
   serverModuleFormat: "esm",
   future: {

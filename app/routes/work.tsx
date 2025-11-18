@@ -1,6 +1,7 @@
 import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
+import { projects } from "~/data/projects";
 
 type ProjectsResponse = {
   projects: {
@@ -23,9 +24,8 @@ export const meta: MetaFunction = () => [
 ];
 
 export async function loader({ request }: LoaderFunctionArgs) {
-  const res = await fetch(new URL("/api/projects", request.url));
-  const data = (await res.json()) as ProjectsResponse;
-  return json({ projects: data.projects });
+  // Use local data directly to avoid self-fetching during SSR/client transitions
+  return json({ projects });
 }
 
 export default function WorkRoute() {
@@ -36,7 +36,7 @@ export default function WorkRoute() {
       <section className="panel">
         <h1 className="section-title">Selected work</h1>
         <p style={{ marginTop: 0, color: "#475569" }}>
-          Work that blends product thinking, UX craft, and front-end execution.
+         Here are some examples of work I’ve built, demonstrating my skills across UX, design and front-end development.
         </p>
         <div className="work-list">
           {projects.map((project) => {

@@ -1,7 +1,15 @@
-import { createRequestHandler } from "@remix-run/netlify";
+import { createRequestHandler as createNetlifyRequestHandler } from "@netlify/remix-adapter";
+import { createRequestHandler as createNodeRequestHandler } from "@remix-run/node";
 import * as build from "@remix-run/dev/server-build";
 
-export const handler = createRequestHandler({
+// Netlify handler (for deploy)
+export const handler = createNetlifyRequestHandler({
   build,
-  mode: process.env.NODE_ENV,
+  mode: process.env.NODE_ENV
 });
+
+// Default export for local dev / remix-serve (expects a Node-style handler)
+export default createNodeRequestHandler(build, process.env.NODE_ENV);
+
+// Re-export build metadata so tools like remix-serve can read it.
+export * from "@remix-run/dev/server-build";

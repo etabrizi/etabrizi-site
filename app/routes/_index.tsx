@@ -2,6 +2,7 @@ import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 import { useEffect, useRef } from "react";
+import { projects } from "~/data/projects";
 
 type ProjectsResponse = {
   projects: {
@@ -24,9 +25,8 @@ export const meta: MetaFunction = () => [
 ];
 
 export async function loader({ request }: LoaderFunctionArgs) {
-  const res = await fetch(new URL("/api/projects", request.url));
-  const data = (await res.json()) as ProjectsResponse;
-  return json({ featured: data.projects.slice(0, 1) });
+  // Use local data directly to avoid self-fetching the API route during SSR
+  return json({ featured: projects.slice(0, 1) });
 }
 
 export default function IndexRoute() {
