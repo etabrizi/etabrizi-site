@@ -22,7 +22,16 @@ export const meta: MetaFunction = () => [
   {
     name: "description",
     content: "A simple Remix-powered portfolio with projects, bio, and contact info."
-  }
+  },
+  { property: "og:title", content: "ETabrizi / UI Engineer" },
+  {
+    property: "og:description",
+    content:
+      "Portfolio of Emyr Tabrizi showcasing inclusive design systems, product thinking, and thoughtful engineering."
+  },
+  { property: "og:url", content: "https://etabrizi.netlify.app/" },
+  { property: "og:type", content: "website" },
+  { property: "og:image", content: "https://etabrizi.netlify.app/og-preview.jpg" }
 ];
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
